@@ -1,0 +1,121 @@
+.sheet-item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin: 4px 0 12px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  padding: 4px 9px;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-soft);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.sheet-item__label {
+  font-weight: 600;
+}
+
+.sheet-item__id {
+  border-radius: 999px;
+  padding: 1px 6px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-brand-1);
+  font-size: 12px;
+}
+
+.sheet-item__phase {
+  color: var(--vp-c-text-3);
+}
+
+.guide-box {
+  margin: 12px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-left-width: 4px;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: var(--vp-c-bg);
+}
+
+.guide-box--done {
+  border-left-color: var(--vp-c-brand-1);
+}
+
+.guide-box--caution {
+  border-left-color: var(--vp-c-warning-1);
+}
+
+.guide-box__title {
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.guide-box__content > :first-child {
+  margin-top: 0;
+}
+
+.guide-box__content > :last-child {
+  margin-bottom: 0;
+}
+
+.rule-block {
+  margin: 12px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-left-width: 4px;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: var(--vp-c-bg);
+}
+
+.rule-block--required {
+  border-left-color: var(--vp-c-danger-1);
+}
+
+.rule-block--recommended {
+  border-left-color: var(--vp-c-brand-1);
+}
+
+.rule-block--preference {
+  border-left-color: var(--vp-c-text-3);
+}
+
+.rule-block--consult {
+  border-left-color: var(--vp-c-warning-1);
+}
+
+.rule-block__header {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rule-block__eyebrow {
+  margin: 0 0 4px;
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.rule-block__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.rule-block__description {
+  margin: 6px 0 10px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+}
+
+.rule-block__content > :first-child {
+  margin-top: 0;
+}
+
+.rule-block__content > :last-child {
+  margin-bottom: 0;
+}
