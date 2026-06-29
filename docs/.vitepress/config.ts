@@ -42,7 +42,8 @@ export default defineConfig({
         items: [
           { text: 'Overview', link: '/setter/' },
           { text: 'Statement and Specification', link: '/setter/statement' },
-          { text: 'Subtasks and Scoring', link: '/setter/subtasks' }
+          { text: 'Subtasks and Scoring', link: '/setter/subtasks' },
+          { text: 'Validator', link: '/setter/validator' }
         ]
       },
       {
