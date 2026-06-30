@@ -47,7 +47,7 @@ Validator tests are an additional safety measure for checking that the validator
 Validator tests are most useful for constraints that require nontrivial logic, such as checking whether a graph is a tree, whether edges are unique, or whether an array is a permutation.
 :::
 
-You may add tests for any input constraint. However, simple range constraints are often better checked by reading the validator, assuming that the official code template is used correctly.
+You may add tests for any input constraint, including the subtask constraints. However, simple range constraints are often better checked by reading the validator, assuming that the official code template is used correctly.
 
 Do not make validator tests unnecessarily large. For example, if the constraint is $n \le 10^5$ and the input contains an array of length $n$, avoid creating a huge validator test only to check the upper bound of $n$. Such a test may be hundreds of kilobytes while adding little value.
 

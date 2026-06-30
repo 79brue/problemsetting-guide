@@ -29,6 +29,10 @@ When writing the statement, make sure that the task is described clearly and acc
 
 Flavortext is welcome when it helps explain the situation or makes the statement more pleasant to read. Remove or shorten it when it makes the task harder to understand.
 
+::: tip Check the rendered statement
+In the statement page, you may click `In HTML` or `In PDF` to see the rendered statement. Make sure to check them and see if the statement is rendered as intended.
+:::
+
 ## Specifications and Constraints
 
 ::: warning Write all necessary specifications
@@ -54,5 +58,6 @@ For common statement phrases, see [Common Text](../reference/common-text.md) and
 - The task is unambiguous and matches the intended problem.
 - All necessary specifications are written.
 - The official solution solves exactly the problem described in the statement.
+- The statement is well rendered as intended.
 - **The changes are committed on Polygon.**
 :::

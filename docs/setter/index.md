@@ -9,3 +9,4 @@ It is not meant to be a strict rulebook. It is a guide for making problems clear
 - [Statement and Specification](./statement.md)
 - [Subtasks and Scoring](./subtasks.md)
 - [Validator](./validator.md)
+- [Sample Tests](./samples.md)
