@@ -10,3 +10,4 @@ It is not meant to be a strict rulebook. It is a guide for making problems clear
 - [Subtasks and Scoring](./subtasks.md)
 - [Validator](./validator.md)
 - [Sample Tests](./samples.md)
+- [Checker](./checker.md)

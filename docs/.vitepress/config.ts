@@ -44,7 +44,8 @@ export default defineConfig({
           { text: 'Statement and Specification', link: '/setter/statement' },
           { text: 'Subtasks and Scoring', link: '/setter/subtasks' },
           { text: 'Validator', link: '/setter/validator' },
-          { text: 'Sample Tests', link: '/setter/samples' }
+          { text: 'Sample Tests', link: '/setter/samples' },
+          { text: 'Checker', link: '/setter/checker' }
         ]
       },
       {

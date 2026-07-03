@@ -39,6 +39,8 @@ In the statement page, you may click `In HTML` or `In PDF` to see the rendered s
 The statement should contain all information needed to judge submissions correctly, including input/output format, constraints, and variables.
 :::
 
+We recommend using multitests for all problems.
+
 Some specifications are easy to forget.
 * For graph problems, make sure the statement says whether the graph is directed or undirected, whether it is connected, and whether self-loops or multiple edges are allowed.
 * For constructive or output-flexible problems, clearly state whether any valid answer may be printed, and what should be printed if no answer exists.
