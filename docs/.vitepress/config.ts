@@ -45,7 +45,8 @@ export default defineConfig({
           { text: 'Subtasks and Scoring', link: '/setter/subtasks' },
           { text: 'Validator', link: '/setter/validator' },
           { text: 'Sample Tests', link: '/setter/samples' },
-          { text: 'Checker', link: '/setter/checker' }
+          { text: 'Checker', link: '/setter/checker' },
+          { text: 'Main Correct Solution', link: '/setter/mcs' }
         ]
       },
       {
