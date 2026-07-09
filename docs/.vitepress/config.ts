@@ -46,7 +46,9 @@ export default defineConfig({
           { text: 'Validator', link: '/setter/validator' },
           { text: 'Sample Tests', link: '/setter/samples' },
           { text: 'Checker', link: '/setter/checker' },
-          { text: 'Main Correct Solution', link: '/setter/mcs' }
+          { text: 'Main Correct Solution', link: '/setter/mcs' },
+          { text: 'Initial Tests', link: '/setter/initial-tests' },
+          { text: 'Full Test Data', link: '/setter/full-tests' }
         ]
       },
       {

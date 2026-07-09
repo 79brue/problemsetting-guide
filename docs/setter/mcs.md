@@ -17,7 +17,7 @@ The main goals of this stage are:
 - [Polygon Manual: Solutions](../polygon/)
 - [Sample Tests](./samples.md)
 
-## How to Ensure the Correctness of Main Correct Solution
+## How to Ensure the Correctness of the Main Correct Solution
 
 ::: danger A wrong main correct solution can ruin the entire contest
 Polygon generates official outputs from the main correct solution. If the main correct solution is wrong, later tests and samples may also become wrong.
@@ -34,7 +34,7 @@ In this stage, do the following:
 - Write a full solution that is intended to solve the entire problem.
 - Run it on the sample inputs chosen earlier, and check that it prints the intended outputs.
   - If it does not, debug the solution or recheck the sample answer.
-- Upload the solution in the `Solutions` tab in Polygon.
+- Upload the solution in the `Solutions` tab in Polygon, and name it as `mcs.cpp`.
 - Mark it as the main correct solution.
 
 You can read more about uploading solutions in [Polygon Manual: Solutions](../polygon/).
