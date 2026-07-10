@@ -14,3 +14,4 @@ It is not meant to be a strict rulebook. It is a guide for making problems clear
 - [Main Correct Solution](./mcs.md)
 - [Initial Tests](./initial-tests.md)
 - [Full Test Data](./full-tests.md)
+- [Editorial](./editorial.md)

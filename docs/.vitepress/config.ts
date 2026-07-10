@@ -48,7 +48,8 @@ export default defineConfig({
           { text: 'Checker', link: '/setter/checker' },
           { text: 'Main Correct Solution', link: '/setter/mcs' },
           { text: 'Initial Tests', link: '/setter/initial-tests' },
-          { text: 'Full Test Data', link: '/setter/full-tests' }
+          { text: 'Full Test Data', link: '/setter/full-tests' },
+          { text: 'Editorial', link: '/setter/editorial' }
         ]
       },
       {
