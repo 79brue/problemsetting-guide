@@ -25,9 +25,7 @@ The main goals of this stage are:
 
 Most problems do not need a custom checker. Use the simplest standard checker that correctly matches the statement.
 
-For problems with a unique output, ignoring whitespace,
-* Use `ncmp.cpp` for problems that output single or more `int64` (`long long`) integers.
-* Use `wcmp.cpp` for problems that has a unique possible output, ignoring whitespaces, but does not fit above.
+For problems with a unique output, ignoring whitespace, use `wcmp.cpp`.
 
 For problems with more than one possible output, ignoring whitespace,
 - Use `nyesno.cpp` if the output consists only of `Yes`/`No` answers and case should be ignored.

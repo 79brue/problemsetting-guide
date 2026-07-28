@@ -56,7 +56,8 @@ export default defineConfig({
         text: 'Tester Manual',
         items: [
           { text: 'Overview', link: '/tester/' },
-          { text: 'Statement Review', link: '/tester/statement' }
+          { text: 'Statement Review', link: '/tester/statement' },
+          { text: 'Validator Review', link: '/tester/validator' }
         ]
       },
       {
