@@ -5,15 +5,13 @@
 The main goals of this stage are:
 - Check that the official test data is strong enough for contest use.
 - Write additional WA, TLE, subtask, and cheesing solutions.
-- Add tests that distinguish those solutions from correct solutions.
+- Find weaknesses in the test data through those solutions, and suggest additional tests when needed.
 - Check that the time limit, memory limit, groups, points, and dependencies work as intended.
 
 ::: info Polygon checklist for this stage
-- Review all current tests and generators.
 - Upload additional WA, TLE, subtask, and cheesing solutions.
 - Run invocations with all relevant solutions and tests.
-- Add tests for solutions that receive an unintended verdict or score.
-- Recheck TL, ML, groups, points, and dependencies.
+- Investigate every solution that receives an unexpected verdict or score.
 :::
 
 ## Related Pages
@@ -25,28 +23,9 @@ The main goals of this stage are:
 - [Polygon Manual: Stress](../polygon/)
 - [Polygon Manual: Solutions](../polygon/)
 
-## Reviewing the Test Data
-
-Review the current tests and think about what each test is intended to cover.
-
-Check whether the test data contains:
-
-- important boundary and corner cases;
-- maximum-size inputs;
-- cases for every subtask;
-- cases targeting common implementation mistakes;
-- cases targeting incorrect greedy, heuristic, or simplified approaches;
-- cases that stress the intended time complexity.
-
-Do not judge test quality only by the number or size of tests. A small targeted test may be more useful than many large random tests.
-
-::: tip Start from possible wrong solutions
-Think about what a contestant might implement incorrectly, then construct an input where that approach fails.
-:::
-
 ## Writing Additional Solutions
 
-Write solutions that should receive different verdicts or scores.
+The main way to review the test data is to write solutions that should receive different verdicts or scores.
 
 Useful examples include:
 
@@ -54,60 +33,55 @@ Useful examples include:
 - solutions with off-by-one or overflow mistakes;
 - intended subtask solutions;
 - solutions with a worse time complexity;
-- greedy or heuristic approaches;
-- cheesing solutions that exploit weaknesses in the test data.
+- incorrect greedy or heuristic approaches;
+- cheesing solutions that might exploit weaknesses in the test data.
 
-Run invocations with all relevant solutions and tests.
+Run invocations with all relevant solutions and tests. Ideally, every solution should receive its expected verdict or score in each subtask.
 
-The expected behavior is:
+If a solution receives an unexpected verdict or score, investigate why. Possible reasons include:
 
-- all correct solutions are accepted;
-- WA solutions fail;
-- TLE solutions exceed the time limit on relevant tests;
-- subtask solutions receive the intended scores.
+- your expectation about the solution was wrong;
+- the test data is too weak;
+- the subtask constraints does not match well with the time limit;
+- the checker behaves unexpectedly;
+- the subtask groups, points, or dependencies are incorrect.
 
-::: warning Investigate every unexpected result
-If a solution receives an unintended verdict or score, determine whether the problem is in the solution, test data, checker, grouping, or limits.
+::: tip Think like a contestant trying to cheese the problem
+Do not limit yourself to clean or intended approaches. Try solutions that exploit weak constraints, weak tests, randomized behavior, heuristics, or other shortcuts that contestants may reasonably attempt.
 :::
 
-## Adding and Improving Tests
+## Finding Counterexamples
 
-When a dangerous wrong solution passes, find a counterexample and add it to the official tests.
+When a dangerous wrong solution passes, try to find an input where it fails.
 
-Stress testing is useful for finding small counterexamples. Once a useful counterexample is found, preserve it as a deterministic official test when possible.
+Stress testing can be useful for finding small counterexamples. See [Polygon Manual: Stress](../polygon/) for details.
 
-Avoid adding many tests with the same purpose. Prefer a smaller set of intentional tests that collectively cover the important risks.
+Once you find a useful counterexample, report it to the setter together with the solution it is intended to break.
 
-## Rechecking Limits and Scoring
+::: warning Let the setter maintain the official test data
+Testers should generally avoid directly adding or reorganizing official tests. The setter understands the structure and purpose of the testset best.
 
-Use the full test data to recheck:
+Instead, report the weakness and suggest a counterexample or type of test. The setter should normally decide how to incorporate it into the official test data.
+:::
 
-- the time limit and memory limit;
-- subtask group names and points;
-- group dependencies;
-- partial-scoring behavior, if used;
-- the scores of intended subtask solutions.
+## Final Check
 
-Correct solutions should have a safe runtime margin, while intended TLE solutions should not pass reliably.
+After the main test-data issues are resolved, recheck that:
 
-## Reporting Issues
+- the time limit and memory limit are appropriate; see [Setter Manual: Initial Tests](../setter/initial-tests.md) for the TL/ML guidelines;
+- subtask group names and points are consistent with the statement;
+- group dependencies are correct;
+- intended subtask solutions receive the expected scores;
+- important TLE solutions do not pass reliably.
 
-When you find an issue, report:
-
-- the affected solution;
-- its actual and intended verdict or score;
-- the test or missing case that causes the issue;
-- the proposed test or configuration change.
-
-After the setter makes changes, rerun the relevant invocations.
+If any of these settings look suspicious, report them to the setter and rerun the relevant invocations after they are changed.
 
 ## Before Moving On
 
 ::: tip Ready to move on when
-- All correct solutions are accepted on all tests.
-- Important WA and cheesing solutions fail.
-- TLE solutions exceed the time limit on relevant tests.
-- Subtask solutions receive the intended scores.
+- All solutions written during testing receive the intended verdict or score.
+- Important natural WA, TLE, subtask, and cheesing approaches have been tried.
+- Any weaknesses found in the test data have been reported and resolved.
 - TL, ML, groups, points, and dependencies have been rechecked.
-- All reported issues have been fixed and verified.
 :::
+
