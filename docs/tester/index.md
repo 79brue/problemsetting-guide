@@ -6,3 +6,4 @@ This section will explain how testers should review problems and report issues.
 - [Validator Review](./validator.md)
 - [Checker Review](./checker.md)
 - [Solution Review](./solution.md)
+- [Testing Review](./testing.md)

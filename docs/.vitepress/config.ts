@@ -59,7 +59,8 @@ export default defineConfig({
           { text: 'Statement Review', link: '/tester/statement' },
           { text: 'Validator Review', link: '/tester/validator' },
           { text: 'Checker Review', link: '/tester/checker' },
-          { text: 'Solution Review', link: '/tester/solution' }
+          { text: 'Solution Review', link: '/tester/solution' },
+          { text: 'Testing Review', link: '/tester/testing' }
         ]
       },
       {
