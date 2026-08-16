@@ -1,21 +1,40 @@
 # Statement Conventions
 
-(Writing in progress)
+This page lists the formatting and style conventions used in M(IT)^2 problem statements.
 
-This page will collect formatting and style conventions for M(IT)^2 problem statements.
+## Names and Flavortext
 
-You should follow the conventions below for the consistency of problem statements.
+- If you need a character, use the name `Busy Beaver`.
+- If you need additional characters, name them in the same style: an adjective followed by an animal.
 
-* If you need a character, you must use the name `Busy Beaver`. If you need more characters, name them in the similar format: an adjective followed by an animal.
-* All numbers go in math mode. If you chose to spell it out as a word, this doesn't apply.
-  * This is especially relevant for sample explanations.
-* All variables should be named in lowercase alphabet, with the exception of sets and graphs, which uses uppercase.
-* When listing a list of elements, list the first two elmements, use ellipsis (`\dots`), and then list the last element.
-* Representing huge numbers:
-  * Use scientific notation for numbers $\ge 1\,000$, if there are at most two non-zero digits at the front and all following digits are zero.
-  * Else, represent the entire digits, separating by space (`\,`), grouped by three digits from the back.
-  * Example: $10^9$, $1.5 \cdot 10^5$, $998\,244\,353$
-* If your problem asks the answer mod some modulo, you must use $998\,244\,353$ as the modulo, expect for a few exceptions:
-  * If your problem solution works for only one specific modulo, you may use that modulo.
-  * If your problem solution requires a smaller (or bigger) range of modulo, you should use a modulo which is the next prime after $10^k$ for a certain $k$. (Example: $100\,003$)
-* (TODO: more stuff here; probably better to move to a separate page in /reference)
+## Mathematical Notation
+
+- Write numbers in math mode when they are written as digits. This also applies to numbers in sample explanations.
+  - If a number is spelled out as a word, this does not apply.
+- Use lowercase Latin letters for variables. Use uppercase letters for sets and graphs.
+- When listing a sequence, write the first two elements, an ellipsis (`\dots`), and the last element.
+  - Example: $a_1, a_2, \dots, a_n$.
+- Use the same notation and capitalization consistently throughout the statement.
+
+## Numbers
+
+For large numbers:
+
+- If the number is at least $1\,000$, and it can be written naturally with at most two nonzero leading digits followed by zeros, use scientific notation.
+- Otherwise, write all digits and group them by three from the right using `\,`.
+
+Examples:
+
+- $10^9$
+- $1.5 \cdot 10^5$
+- $998\,244\,353$
+
+## Standard Choices
+
+If a problem asks for the answer modulo a number, use $998\,244\,353$ by default.
+
+Exceptions include:
+
+- If the solution works only for a specific modulus, use that modulus.
+- If the problem requires a significantly smaller or larger modulus, use the smallest prime greater than $10^k$ for an appropriate $k$.
+  - Example: $100\,003$.

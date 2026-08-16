@@ -67,7 +67,10 @@ export default defineConfig({
       {
         text: 'Reference',
         items: [
-          { text: 'Overview', link: '/reference/' }
+          { text: 'Overview', link: '/reference/' },
+          { text: 'Statement Conventions', link: '/reference/statement-conventions' },
+          { text: 'Common Text', link: '/reference/common-text' },
+          { text: 'Code Template', link: '/reference/code-template' }
         ]
       }
     ]
