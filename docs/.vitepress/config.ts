@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'M(IT)^2 Problemsetting Guide',
+  title: 'Problemsetting Guide',
   description: 'Guide for preparing and testing M(IT)^2 problems',
   base: '/problemsetting-guide/',
 

@@ -119,3 +119,44 @@
 .rule-block__content > :last-child {
   margin-bottom: 0;
 }
+
+
+/* Compact copyable snippets on the Common Text page */
+.common-text-page div[class*='language-'] {
+  margin: 6px 0 12px;
+  overflow-x: hidden;
+}
+
+/* Hide the unhelpful "text" language label */
+.common-text-page div[class*='language-'] > .lang {
+  display: none;
+}
+
+/* Compact block + reserve room for the copy button */
+.common-text-page div[class*='language-'] pre {
+  padding: 7px 16px 7px 0px;
+  white-space: pre-wrap;
+  overflow-x: hidden;
+}
+
+/* Allow long sentences to wrap instead of scrolling */
+.common-text-page div[class*='language-'] code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-height: 1.4;
+}
+
+/* Shiki may wrap lines in .line spans */
+.common-text-page div[class*='language-'] code .line {
+  white-space: pre-wrap;
+}
+
+/* Smaller copy button for one-line snippets */
+.common-text-page div[class*='language-'] > .copy {
+  top: 4px;
+  right: 4px;
+  width: 28px;
+  height: 28px;
+  background-size: 14px;
+}
