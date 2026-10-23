@@ -49,29 +49,29 @@ It can be shown that the answer is unique.
 **Integers**
 
 ```text
-* $1 \le n \le 2 \cdot 10^5$.
-* $0 \le m \le 2 \cdot 10^5$.
+\item $1 \le n \le 2 \cdot 10^5$.
+\item $0 \le m \le 2 \cdot 10^5$.
 ```
 
 **Sequence Values**
 
 ```text
-* $1 \le a_i \le 10^9$ ($1 \le i \le n$).
+\item $1 \le a_i \le 10^9$ ($1 \le i \le n$).
 ```
 
 **Permutation**
 
 ```text
-* $1 \le p_i \le n$ ($1 \le i \le n$).
-* $p_i \ne p_j$ ($1 \le i < j \le n$).
+\item $1 \le p_i \le n$ ($1 \le i \le n$).
+\item $p_i \ne p_j$ ($1 \le i < j \le n$).
 ```
 
 **String Length and Alphabet**
 
 ```text
-* $|s| = n$.
-* $s$ consists only of lowercase English letters.
-* $s_i \in \{\texttt{L}, \texttt{R}\}$ ($1 \le i \le n$).
+\item $|s| = n$.
+\item $s$ consists only of lowercase English letters.
+\item $s_i \in \{\texttt{L}, \texttt{R}\}$ ($1 \le i \le n$).
 ```
 
 ### Multiple Test Cases
@@ -79,13 +79,13 @@ It can be shown that the answer is unique.
 **Number of test cases**
 
 ```text
-* $1 \le t \le 10^4$.
+\item $1 \le t \le 10^4$.
 ```
 
 **Sum of sizes**
 
 ```text
-* The sum of $n$ over all test cases does not exceed $2 \cdot 10^5$.
+\item The sum of $n$ over all test cases does not exceed $2 \cdot 10^5$.
 ```
 
 ### Graph
@@ -95,15 +95,15 @@ It can be shown that the answer is unique.
 For an undirected graph, use the second or third line if the graph does not have self-loops or multiple edges, respectively.
 
 ```text
-* $1 \le u_i, v_i \le n$ ($1 \le i \le m$).
-* $u_i \ne v_i$ ($1 \le i \le m$).
-* $\{u_i, v_i\} \ne \{u_j, v_j\}$ ($1 \le i < j \le m$).
+\item $1 \le u_i, v_i \le n$ ($1 \le i \le m$).
+\item $u_i \ne v_i$ ($1 \le i \le m$).
+\item $\{u_i, v_i\} \ne \{u_j, v_j\}$ ($1 \le i < j \le m$).
 ```
 
 For a directed graph with no multiple edges, use ordered pairs instead:
 
 ```text
-* $(u_i, v_i) \ne (u_j, v_j)$ ($1 \le i < j \le m$).
+\item $(u_i, v_i) \ne (u_j, v_j)$ ($1 \le i < j \le m$).
 ```
 
 **Connected Graph**
@@ -111,7 +111,7 @@ For a directed graph with no multiple edges, use ordered pairs instead:
 To use the constraint below, define graph $G$ in the statement.
 
 ```text
-* The graph $G$ is connected.
+\item The graph $G$ is connected.
 ```
 
 ### Tree
@@ -119,13 +119,13 @@ To use the constraint below, define graph $G$ in the statement.
 **Number of vertices**
 
 ```text
-* $2 \le n \le 2 \cdot 10^5$.
+\item $2 \le n \le 2 \cdot 10^5$.
 ```
 
 **Edge endpoints**
 
 ```text
-* $1 \le u_i, v_i \le n$ ($1 \le i \le n-1$).
+\item $1 \le u_i, v_i \le n$ ($1 \le i \le n-1$).
 ```
 
 **Tree Structure**
@@ -133,7 +133,7 @@ To use the constraint below, define graph $G$ in the statement.
 To use the constraint below, define graph $T$ in the statement.
 
 ```text
-* The graph $T$ is a tree.
+\item The graph $T$ is a tree.
 ```
 
 ### Grid/Matrix
@@ -143,8 +143,8 @@ To use the constraint below, define graph $T$ in the statement.
 By default, use $n$ for the number of rows and $m$ for the number of columns.
 
 ```text
-* $1 \le n \le 2 \cdot 10^3$.
-* $1 \le m \le 2 \cdot 10^3$.
+\item $1 \le n \le 2 \cdot 10^3$.
+\item $1 \le m \le 2 \cdot 10^3$.
 ```
 
 Prefer explicit bounds for both $n$ and $m$. Avoid using only a product constraint such as $n \cdot m \le K$ unless it is necessary for the problem.
@@ -152,7 +152,7 @@ Prefer explicit bounds for both $n$ and $m$. Avoid using only a product constrai
 **Matrix elements**
 
 ```text
-* $1 \le a_{i,j} \le 10^9$ ($1 \le i \le n$, $1 \le j \le m$).
+\item $1 \le a_{i,j} \le 10^9$ ($1 \le i \le n$, $1 \le j \le m$).
 ```
 
 ## Input Format

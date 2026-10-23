@@ -28,10 +28,10 @@ public:
          *
          * Example:
          *
-         * n = inf.readInt(1, 200000, "n");
+         * n = inf.readInt(1, 200'000, "n");
          * inf.readEoln();
          *
-         * a = inf.readInts(n, 1, 1000000000, "a");
+         * a = inf.readInts(n, 1, 1'000'000'000, "a");
          * inf.readEoln();
          *
          * inf.readEof();
@@ -51,12 +51,12 @@ public:
          * Example:
          *
          * // 1 <= n <= 2 * 10^5
-         * ensuref(1 <= n && n <= 200000,
+         * ensuref(1 <= n && n <= 200'000,
          *         "n must satisfy 1 <= n <= 2 * 10^5, but n = %d", n);
          *
          * // 1 <= a_i <= 10^9 (1 <= i <= n)
          * for (int i = 0; i < n; i++) {
-         *     ensuref(1 <= a[i] && a[i] <= 1000000000,
+         *     ensuref(1 <= a[i] && a[i] <= 1'000'000'000,
          *             "a[%d] must satisfy 1 <= a_i <= 10^9, but a[%d] = %d",
          *             i + 1, i + 1, a[i]);
          * }
