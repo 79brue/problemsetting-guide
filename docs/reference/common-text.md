@@ -156,6 +156,28 @@ Prefer explicit bounds for both $n$ and $m$. Avoid using only a product constrai
 ```
 
 ## Input Format
+### Multiple Test Cases
+
+**Number of test cases**
+
+```text
+The first line contains a single integer $t$~--- the number of test cases.
+The description of the test cases follows.
+```
+
+**First line of each test case**
+
+```text
+The first line of each test case contains a single integer $n$.
+```
+
+**Only line of each test case**
+
+```text
+The only line of each test case contains a single integer $n$.
+```
+
+### Without Testcases
 
 **Single Integer**
 
@@ -179,27 +201,6 @@ The second line contains $n$ integers $a_1, a_2, \dots, a_n$.
 
 ```text
 The second line contains a string $s$.
-```
-
-### Multiple Test Cases
-
-**Number of test cases**
-
-```text
-The first line contains a single integer $t$~--- the number of test cases.
-The description of the test cases follows.
-```
-
-**First line of each test case**
-
-```text
-The first line of each test case contains a single integer $n$.
-```
-
-**Only line of each test case**
-
-```text
-The only line of each test case contains a single integer $n$.
 ```
 
 ### Queries
@@ -352,22 +353,12 @@ If the problem has neither subtasks nor partial scoring, you may omit this secti
 
 ### Subtasks
 
-**Number of subtasks**
-
 ```text
 There are $k$ subtasks for this problem.
-```
-
-**Subtask with additional constraints**
-
-```text
-Subtask 1 ($x$ points): ...
-```
-
-**No additional constraints**
-
-```text
-Subtask 3 ($x$ points): No additional constraints.
+\begin{itemize}
+    \item Subtask 1 ($x$ points): ...
+    \item Subtask 2 ($x$ points): No additional constraints.
+\end{itemize}
 ```
 
 ### Partial Scoring
@@ -396,18 +387,4 @@ Your score is rounded to the nearest [integer / one decimal place / two decimal 
 
 ```text
 Your score is truncated to [an integer / one decimal place / two decimal places / ...].
-```
-
-**Table-based scoring**
-
-Use a table when the score is determined by several ranges or discrete conditions. Make the conditions mutually exclusive so that exactly one row applies.
-
-```text
-Your score is calculated according to the following table:
-
-| Condition | Score |
-| --- | ---: |
-| ... | ... points |
-| ... | ... points |
-| ... | ... points |
 ```
